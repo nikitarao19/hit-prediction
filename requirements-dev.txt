@@ -1,0 +1,9 @@
+# Full local development set: everything in requirements.txt, plus what's
+# needed to run the pipeline (scripts/run_pipeline.py), compute SHAP values,
+# pull the raw dataset, and run the test suite.
+# Use this locally: pip install -r requirements-dev.txt
+-r requirements.txt
+shap>=0.45,<1
+scipy>=1.11,<2
+kaggle>=1.6,<2
+pytest>=8,<9

@@ -1,0 +1,18 @@
+{
+  "baseline_mean": {
+    "rmse": 20.677911784850206,
+    "mae": 17.328141138635452
+  },
+  "linear_regression": {
+    "rmse": 20.28167353204057,
+    "mae": 16.743558381196635
+  },
+  "xgboost_regressor": {
+    "rmse": 18.69542268432846,
+    "mae": 14.934290885925293
+  },
+  "gbm_beats_linear": true,
+  "linear_beats_baseline": true,
+  "n_train": 71792,
+  "n_test": 17948
+}

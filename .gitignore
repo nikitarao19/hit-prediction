@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Raw Kaggle download is reproducible via `kaggle datasets download` (see
+# README) and is ~100MB+ across dataset versions -- excluded. Processed
+# outputs ARE committed: the deployed Streamlit app reads them directly and
+# can't run the Kaggle download itself (no credentials on Streamlit Cloud).
+data/raw/*
+!data/raw/.gitkeep
+
+.ipynb_checkpoints/
+*.egg-info/
+.env

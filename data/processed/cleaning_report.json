@@ -1,0 +1,8 @@
+{
+  "raw_rows": 114000,
+  "raw_unique_track_ids": 89741,
+  "dropped_invalid_duration_or_missing_meta": 1,
+  "dropped_invalid_popularity": 0,
+  "dropped_duplicate_track_id": 24259,
+  "final_rows": 89740
+}

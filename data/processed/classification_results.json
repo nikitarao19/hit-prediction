@@ -1,0 +1,17 @@
+{
+  "hit_threshold_popularity": 52.0,
+  "hit_percentile": 0.8,
+  "logistic_regression": {
+    "auc": 0.6365014436742704,
+    "average_precision": 0.29805861974622255,
+    "positive_rate": 0.2102741252507243
+  },
+  "xgboost_classifier": {
+    "auc": 0.7172221857063199,
+    "average_precision": 0.38688684705979315,
+    "positive_rate": 0.2102741252507243
+  },
+  "gbm_beats_logistic": true,
+  "n_train": 71792,
+  "n_test": 17948
+}
