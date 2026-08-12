@@ -137,19 +137,26 @@ placement), so audio features alone explain the least about it.
 
 ## Dashboard
 
-A dark, music-player-styled Streamlit dashboard (`src/what_makes_a_hit/dashboard/app.py`):
+A dark, editorial, music-player-styled Streamlit app
+(`src/what_makes_a_hit/dashboard/app.py`) — designed to be legible to someone
+who has never seen a SHAP value:
 
-- **🎛️ Hit Predictor** — slide danceability, energy, tempo, and more (or
-  start from a genre's typical profile, or hit "surprise me" to load a real
-  track) and get a live predicted-popularity gauge, hit-probability badge,
-  and a "sounds like" list of the nearest real tracks by audio-feature
-  distance.
-- **🧬 What Matters** — global SHAP feature importance bar chart plus a
-  full per-track SHAP beeswarm plot.
-- **🎧 By Genre** — popularity and model-error by genre, top SHAP feature per
-  genre, and a genre × feature importance heatmap.
-- **📊 Scoreboard** — regression and classification model comparisons,
-  precision-recall curve, and predicted-vs-actual scatter.
+- **01 · Studio** — shape a track with grouped dials (feel / texture / bones),
+  start from a genre's typical sound, or load a real track and **listen to it
+  in-page** via Spotify's embed player — with an honesty readout comparing the
+  model's audio-only guess against Spotify's actual score. A "now playing"
+  card renders the prediction as a seek-bar with hit odds, a radar overlays
+  your track against the median top-20% hit, "chase the hit" lets the model
+  greedily nudge your dials toward a higher score, and "sounds like" surfaces
+  the nearest real tracks by audio distance — all playable.
+- **02 · What matters** — plain-language SHAP takeaways (directions computed
+  from the data, not asserted), the global importance chart, and a per-track
+  beeswarm with a how-to-read-it caption.
+- **03 · Genres** — popularity and model error by genre, a genre × feature
+  SHAP heatmap, and the most popular track per focus genre, playable in-page.
+- **04 · Under the hood** — the honest scoreboard in plain english (what ±15
+  points means, what AUC 0.72 means), full model comparisons,
+  precision-recall curves, predicted-vs-actual scatter, and data notes.
 
 Run it locally:
 

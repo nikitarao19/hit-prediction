@@ -61,7 +61,11 @@ SHAP_COLORSCALE = [[0.0, "#3987e5"], [1.0, "#e66767"]]
 # and chroma from a surface-adjacent step up to the brand accent. ---------
 SEQUENTIAL_GREEN = [[0.0, "#17301f"], [0.5, "#1f7a3d"], [1.0, "#22c55e"]]
 
-FONT_FAMILY = "system-ui, -apple-system, 'Segoe UI', sans-serif"
+# Space Grotesk is loaded via a Google Fonts @import in the dashboard's
+# injected CSS; plotly text renders in the same document, so it inherits
+# the webfont with a system-ui fallback while it loads.
+FONT_FAMILY = "'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif"
+MONO_FAMILY = "'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace"
 
 
 def apply_theme(fig: go.Figure, height: int | None = None, show_legend: bool | None = None) -> go.Figure:
